@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'KosugiMaru-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/font/KosugiMaru-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'iroha-mochi';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/font/iroha-mochi.otf') format('opentype');
+    unicode-range: U+3040-309F, U+30A0-30FF;
+}
+
+body {
+    font-family: "iroha-mochi", "KosugiMaru-Regular", Arial, Helvetica, sans-serif;
+}
