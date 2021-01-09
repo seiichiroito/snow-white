@@ -104,7 +104,7 @@ body {
     font-size: 45px;
   }
   &__main {
-      margin-top: 30px;
+    margin-top: 30px;
     background-image: url("/assets/images/book.png");
     background-position: center;
     background-size: cover;
@@ -114,4 +114,33 @@ body {
     padding: 8% 15%;
     font-weight: 700;
   }
+}
+
+//* CAST
+.cast {
+    background-color: #f6f3ef;
+    padding: 5% 0;   
+    &__header {
+        text-align: center;
+        font-size: 45px;
+    }
+    &__main {
+        text-align: center;
+        margin-top: 30px;
+        .card {
+            background-color: inherit;
+            border: none;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+        .card-text {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        &--image {
+            margin: 20px auto 0;
+            width: 80%;
+        }
+    }
 }
