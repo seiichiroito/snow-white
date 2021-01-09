@@ -1,28 +1,89 @@
 //* GENERAL
 @font-face {
-    font-family: 'KosugiMaru-Regular';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/assets/font/KosugiMaru-Regular.ttf') format('opentype');
+  font-family: "KosugiMaru-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font/KosugiMaru-Regular.ttf") format("opentype");
 }
 
 @font-face {
-    font-family: 'iroha-mochi';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/assets/font/iroha-mochi.otf') format('opentype');
-    unicode-range: U+3040-309F, U+30A0-30FF;
+  font-family: "iroha-mochi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font/iroha-mochi.otf") format("opentype");
+  unicode-range: U+3040-309F, U+30A0-30FF;
 }
 
 body {
-    font-family: "iroha-mochi", "KosugiMaru-Regular", Arial, Helvetica, sans-serif;
+  font-family: "iroha-mochi", "KosugiMaru-Regular", Arial, Helvetica, sans-serif;
 }
 //* HEADER
 .header {
-    background: #FFC6CC;
+  background: #ffc6cc;
+  height: 8vh;
 }
 
 .nav-links {
-    box-sizing: border-box;
-    margin-left: 30%;
+  box-sizing: border-box;
+  margin-left: 45%;
+}
+
+//* HERO
+.hero {
+  background: #ffc6cc;
+  height: 92vh;
+  position: relative;
+  // Header
+  &__header {
+    margin-top: 20px;
+    height: 280px;
+    background-image: url("/assets/images/ribbon.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  &__title {
+    padding-top: 6%;
+    font-size: 64px;
+  }
+  &__sub-title {
+    margin-top: 10%;
+    padding-left: 2%;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #555;
+  }
+  // Main
+  &__main {
+    font-size: 30px;
+    margin-top: 50px;
+    line-height: 1.5;
+    &--title {
+        color: #555;
+    }
+    &--align {
+        padding-left: 16.5%;
+    }
+  }
+
+  // Footer
+  &__footer {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+.snow_white {
+  position: absolute;
+  width: calc(80px + 10%);
+  right: 15%;
+  bottom: 10%;
+}
+
+.street_light {
+  position: absolute;
+  width: calc(50px + 15%);
+  right: -5%;
+  bottom: 20%;
 }
