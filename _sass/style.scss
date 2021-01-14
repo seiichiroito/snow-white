@@ -63,7 +63,7 @@ body {
     background-position: center;
     background-size: cover;
     text-align: center;
-    height: 20vh;
+    height: 25vh;
     margin-top: 5%;
   }
   &__title {
@@ -71,7 +71,7 @@ body {
     font-size: 45px;
   }
   &__sub-title {
-    margin-top: 10%;
+    margin-top: 15%;
     font-size: 16px;
     letter-spacing: 3px;
     color: #555;
@@ -88,7 +88,6 @@ body {
   }
   // Footer
   &__footer {
-    margin-top: 10px;
     font-size: 12px;
     color: #555;
     text-align: end;
@@ -114,8 +113,50 @@ body {
     bottom: 15%;
   }
 }
+@media (min-width: 576px) {
+  .hero {
+    &__header {
+      height: 25vh;
+    }
+    &__title {
+      padding-top: 6%;
+    }
+    &__sub-title {
+      margin-top: 10%;
+      font-size: 20px;
+    }
+    // Footer
+    &__footer {
+      text-align: center;
+    }
+  }
+  .snow-white {
+    bottom: 2%;
+  }
+  .street-light {
+    &__container {
+      bottom: 10%;
+    }
+  }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .hero {
+    &__header {
+      height: 30vh;
+    }
+    &__title {
+      padding-top: 8%;
+      font-size: 54px;
+    }
+    &__sub-title {
+      letter-spacing: 5px;
+    }
+    // Footer
+    &__footer {
+      text-align: end;
+    }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -123,25 +164,18 @@ body {
   .hero {
     // Header
     &__header {
-      margin-top: 20px;
-      height: 280px;
+      height: 35vh;
     }
     &__title {
-      padding-top: 6%;
       font-size: 64px;
     }
     &__sub-title {
-      margin-top: 10%;
-      padding-left: 2%;
       font-size: 24px;
-      letter-spacing: 5px;
-      color: #555;
     }
     // Main
     &__main {
       font-size: 30px;
       margin-top: 50px;
-      line-height: 1.5;
     }
   }
   .street-light {
@@ -180,13 +214,19 @@ body {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .summary {
+    &__main {
+      font-size: 24px;
+      padding: 8% 15%;
+    }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .summary {
     &__main {
-      font-size: 24px;
+      font-size: 22px;
       padding: 10% 15%;
       height: 80vh;
     }
@@ -195,6 +235,11 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .summary {
+    &__main {
+      font-size: 24px;
+    }
+  }
 }
 
 //* CAST
@@ -230,7 +275,6 @@ body {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -246,7 +290,6 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
 //* INFO
 /* Extra small devices (phones, less than 768px) */
@@ -262,7 +305,7 @@ body {
   &__main {
     padding: 0 5%;
     h1 {
-      margin:30px 0 10px;
+      margin: 30px 0 10px;
       font-size: 18px;
       color: #555;
     }
@@ -281,17 +324,14 @@ body {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
 //* FOOTER
 /* Extra small devices (phones, less than 768px) */
@@ -308,7 +348,6 @@ body {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -320,5 +359,4 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
