@@ -1,0 +1,12 @@
+<div class="member_intro__card">
+    <div class="member_intro__queen">
+        <img src="/assets/images/{{ include.image }}.png" alt="queen">
+    </div>
+    <div class="member_intro__name">
+        <p class="member_intro__name--role">{{ include.role }}</p>
+        <p class="member_intro__name--actor">{{ include.actor }}</p>
+        {% if include.troupe %}
+        <p class="member_intro__name--troupe">(所属:{{ include.troupe }})</p>
+        {% endif %}
+    </div>
+</div>

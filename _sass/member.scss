@@ -1,8 +1,77 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
 .member_intro {
+    padding: 5% 0;
     flex: 1;
     h1 {
         text-align: center;
         font-size: 45px;
-        margin-top: 50px;
     }
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        margin: 80px 0 0;
+      }
+    &__card {
+        margin-top: 40px;
+    }
+    &__queen {
+        img {
+            width: 30%;
+            float: left;
+        }
+    }
+    &__name {
+        text-align: center;
+        &--role {
+            font-size: 12px;
+            padding-top: 5%;
+        }
+        &--actor {
+            font-size: 15px;
+            margin-top: 8%;
+        }
+        &--troupe {
+            margin-top: 5px;
+            font-size: 10px;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .member_intro {
+        &__name {
+            &--role {
+            }
+            &--actor {
+                font-size: 20px;
+            }
+        }
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .member_intro {
+        &__name {
+            &--role {
+                font-size: 18px;
+            }
+            &--actor {
+                font-size: 28px;
+            }
+            &--troupe {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
