@@ -18,60 +18,77 @@ body {
   font-family: "iroha-mochi", "KosugiMaru-Regular", Arial, Helvetica, sans-serif;
 }
 //* HEADER
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .header {
   background: #ffc6cc;
   height: 8vh;
 }
 
 .nav-links {
-  box-sizing: border-box;
-  margin-left: 45%;
+  text-align: center;
+  background-color: #f99fa8;
+}
+.nav-link {
+  padding: 20px 0;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-links {
+    // box-sizing: border-box;
+    margin-left: 45%;
+    background: #ffc6cc;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
 
 //* HERO
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .hero {
   background: #ffc6cc;
   height: 92vh;
-  //   position: relative;
-  overflow: visible hidden visible visible;
-  // Header
   &__header {
-    margin-top: 20px;
-    height: 280px;
     background-image: url("/assets/images/ribbon.png");
     background-position: center;
     background-size: cover;
     text-align: center;
+    height: 20vh;
+    margin-top: 5%;
   }
   &__title {
-    padding-top: 6%;
-    font-size: 64px;
+    padding-top: 10%;
+    font-size: 45px;
   }
   &__sub-title {
     margin-top: 10%;
-    padding-left: 2%;
-    font-size: 24px;
-    letter-spacing: 5px;
+    font-size: 16px;
+    letter-spacing: 3px;
     color: #555;
+    padding-left: 5%;
   }
   // Main
   &__main {
-    font-size: 30px;
-    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
     line-height: 1.5;
     &--title {
       color: #555;
     }
-    &--align {
-      padding-left: 15%;
-    }
   }
-
   // Footer
   &__footer {
-    margin-top: 50px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 12px;
     color: #555;
+    text-align: end;
   }
 }
 
@@ -79,7 +96,7 @@ body {
   position: absolute;
   width: calc(80px + 10%);
   right: 15%;
-  bottom: 10%;
+  bottom: 5%;
 }
 
 .street-light {
@@ -91,8 +108,48 @@ body {
     position: absolute;
     width: calc(50px + 15%);
     right: 0%;
-    bottom: 20%;
+    bottom: 15%;
   }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero {
+    // Header
+    &__header {
+      margin-top: 20px;
+      height: 280px;
+    }
+    &__title {
+      padding-top: 6%;
+      font-size: 64px;
+    }
+    &__sub-title {
+      margin-top: 10%;
+      padding-left: 2%;
+      font-size: 24px;
+      letter-spacing: 5px;
+      color: #555;
+    }
+    // Main
+    &__main {
+      font-size: 30px;
+      margin-top: 50px;
+      line-height: 1.5;
+    }
+  }
+  .street-light {
+    &__container {
+      bottom: 20%;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
 
 //* SUMMARY
@@ -153,31 +210,31 @@ body {
     font-size: 45px;
   }
   &__main {
-      margin-top: 30px;
-      h1 {
-          margin: 40px 0 10px;
-          font-size: 18px;
-          color: #555;
+    margin-top: 30px;
+    h1 {
+      margin: 40px 0 10px;
+      font-size: 18px;
+      color: #555;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 18px;
+    }
+    &--map {
+      iframe {
+        width: 100%;
+        height: 400px;
       }
-      p {
-          line-height: 1.5;
-          font-size: 18px;
-      }
-      &--map {
-        iframe {
-            width: 100%;
-            height: 400px;
-        }
-      }
+    }
   }
 }
 //* FOOTER
 .footer {
-    background-color: #FFC6CC;
-    padding: 1% 0;
-    text-align: center;
-    p {
-        color: #555;
-        font-size: 14px;
-    }
+  background-color: #ffc6cc;
+  padding: 1% 0;
+  text-align: center;
+  p {
+    color: #555;
+    font-size: 14px;
+  }
 }
