@@ -99,8 +99,18 @@ body {
   width: calc(80px + 10%);
   right: 15%;
   bottom: 5%;
+  z-index: 5;
 }
 
+
+.road {
+  position: absolute;
+  width: 100vw;
+  top: 83%;
+  height: 250vh;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.2));
+}
 .street-light {
   position: relative;
   right: -20%;
@@ -138,6 +148,10 @@ body {
       bottom: 10%;
     }
   }
+  .road {
+    top: 85%;
+    height: 280vh;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -156,6 +170,10 @@ body {
     &__footer {
       text-align: end;
     }
+  }
+  .road {
+    top: 89%;
+    height: 150vh;
   }
 }
 
@@ -183,10 +201,18 @@ body {
       bottom: 20%;
     }
   }
+  .road {
+    top: 88%;
+    height: 180vh;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .road {
+    top: 85%;
+    height: 200vh;
+  }
 }
 
 //* SUMMARY
@@ -209,6 +235,8 @@ body {
     line-height: 1.8;
     font-weight: 700;
     padding: 15% 5%;
+    position: relative;
+    z-index: 5;
   }
 }
 
