@@ -2,7 +2,9 @@
 <html lang="en">
     {% include head.html %}
 <body>
-    {{ content }}
-    {% include js.html %}
+    <div class="outer">
+        {{ content }}
+        {% include js.html %}
+    </div>
 </body>
 </html>

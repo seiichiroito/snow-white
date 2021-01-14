@@ -17,12 +17,17 @@
 body {
   font-family: "iroha-mochi", "KosugiMaru-Regular", Arial, Helvetica, sans-serif;
 }
+.outer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 //* HEADER
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 .header {
   background: #ffc6cc;
-  height: 8vh;
+  height: 9vh;
 }
 
 .nav-links {
@@ -36,7 +41,7 @@ body {
 @media (min-width: 768px) {
   .nav-links {
     // box-sizing: border-box;
-    margin-left: 30%;
+    margin-left:18%;
     background: #ffc6cc;
   }
 }
@@ -44,7 +49,7 @@ body {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .nav-links {
-    margin-left: 45%;
+    margin-left: 35%;
   }
 }
 
@@ -57,7 +62,7 @@ body {
 /* No media query since this is the default in Bootstrap */
 .hero {
   background: #ffc6cc;
-  height: 92vh;
+  height: 91vh;
   &__header {
     background-image: url("/assets/images/ribbon.png");
     background-position: center;
