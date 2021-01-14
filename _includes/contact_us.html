@@ -1,7 +1,7 @@
 <div class="contact_us">
         <div class="container-fluid">
             <h1>お問い合わせ</h1>
-            <h2>名古屋演劇教室<h2>
+            <h2>名古屋演劇教室</h2>
             <div class="row">
                 <div class="col-md-6 left-side">
                     <p>ホームページ:</p>
@@ -25,8 +25,17 @@
                     <p>E-mail:</p>
                 </div>
                 <div class="col-md-6 right-side">
-                    <p>workshop360nagoya@gmail.com</p>
+                    <p>{{ site.email }}</p>
                 </div>
             </div>
+            <h2>SNS</h2>
+            <div class="contact_us__sns">
+                <a class="contact_us__sns--twitter" href="https://twitter.com/{{ site.twitter_username }}">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="contact_us__sns--facebook" href="https://facebook.com/{{ site.facebook_username }}">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
         </div>
 </div>
