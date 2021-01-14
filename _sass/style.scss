@@ -34,14 +34,17 @@ body {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .nav-links {
+    // box-sizing: border-box;
+    margin-left: 30%;
+    background: #ffc6cc;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .nav-links {
-    // box-sizing: border-box;
     margin-left: 45%;
-    background: #ffc6cc;
   }
 }
 
@@ -153,66 +156,113 @@ body {
 }
 
 //* SUMMARY
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .summary {
   background-color: #f6f3ef;
   padding: 5% 0;
   &__header {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
   }
   &__main {
     margin-top: 30px;
     background-image: url("/assets/images/book.png");
     background-position: center;
     background-size: cover;
-    height: 600px;
-    font-size: 24px;
+    height: 75vh;
+    font-size: 18px;
     line-height: 1.8;
-    padding: 8% 15%;
     font-weight: 700;
+    padding: 15% 5%;
   }
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .summary {
+    &__main {
+      font-size: 24px;
+      padding: 10% 15%;
+      height: 80vh;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
 //* CAST
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
 .cast {
   background-color: #f6f3ef;
   padding: 5% 0;
   &__header {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
   }
   &__main {
     text-align: center;
-    margin-top: 30px;
     .card {
       background-color: inherit;
       border: none;
+      margin-top: 40px;
     }
     .card-title {
-      font-size: 20px;
+      font-size: 16px;
     }
     .card-text {
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 24px;
     }
     &--image {
       margin: 20px auto 0;
-      width: 80%;
+      width: 50%;
     }
   }
 }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cast {
+    &__main {
+      &--image {
+        width: 80%;
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
 //* INFO
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
 .info {
   background-color: #f6f3ef;
   padding: 5% 0;
   &__header {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
   }
   &__main {
-    margin-top: 30px;
+    padding: 0 5%;
     h1 {
-      margin: 40px 0 10px;
+      margin:30px 0 10px;
       font-size: 18px;
       color: #555;
     }
@@ -221,6 +271,7 @@ body {
       font-size: 18px;
     }
     &--map {
+      margin-top: 30px;
       iframe {
         width: 100%;
         height: 400px;
@@ -228,13 +279,46 @@ body {
     }
   }
 }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
 //* FOOTER
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .footer {
   background-color: #ffc6cc;
-  padding: 1% 0;
+  padding: 3% 0;
   text-align: center;
   p {
     color: #555;
     font-size: 14px;
   }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer {
+    padding: 1% 0;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
