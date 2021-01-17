@@ -3,14 +3,14 @@
   font-family: "KosugiMaru-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/font/KosugiMaru-Regular.ttf") format("opentype");
+  src: url('font/KosugiMaru-Regular.ttf') format("opentype");
 }
 
 @font-face {
   font-family: "iroha-mochi";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/font/iroha-mochi.otf") format("opentype");
+  src: url('font/iroha-mochi.otf') format("opentype");
   unicode-range: U+3040-309F, U+30A0-30FF;
 }
 
@@ -64,7 +64,7 @@ body {
   background: #ffc6cc;
   height: 91vh;
   &__header {
-    background-image: url("{{ site.baseurl }}/assets/images/ribbon.PNG");
+    background-image: url('images/ribbon.PNG');
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -232,7 +232,7 @@ body {
   }
   &__main {
     margin-top: 30px;
-    background-image: url("{{ site.baseurl }}/assets/images/book.PNG");
+    background-image: url('images/book.PNG');
     background-position: center;
     background-size: cover;
     height: 75vh;
