@@ -64,7 +64,7 @@ body {
   background: #ffc6cc;
   height: 91vh;
   &__header {
-    background-image: url("/assets/images/ribbon.png");
+    background-image: url("{{ site.baseurl }}/assets/images/ribbon.png");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -232,7 +232,7 @@ body {
   }
   &__main {
     margin-top: 30px;
-    background-image: url("/assets/images/book.png");
+    background-image: url("{{ site.baseurl }}/assets/images/book.png");
     background-position: center;
     background-size: cover;
     height: 75vh;
