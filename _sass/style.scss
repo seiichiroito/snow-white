@@ -33,6 +33,8 @@ body {
 .nav-links {
   text-align: center;
   background-color: #f99fa8;
+  position: relative;
+  z-index: 100;
 }
 .nav-link {
   padding: 20px 0;
