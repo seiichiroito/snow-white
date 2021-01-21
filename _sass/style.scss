@@ -138,6 +138,7 @@ body {
   position: relative;
   right: -20%;
   width: 100%;
+  z-index: 999;
   &__container {
     overflow: hidden;
     position: absolute;
