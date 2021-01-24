@@ -119,7 +119,7 @@ body {
 }
 .betsuyaku-minoru {
   position: absolute;
-  width: 150px;
+  width: 100px;
   left: 0;
   bottom: 0;
   z-index: 5;
@@ -231,6 +231,9 @@ body {
   .road {
     top: 88%;
     height: 180vh;
+  }
+  .betsuyaku-minoru {
+    width: 150px;
   }
 }
 
@@ -386,6 +389,28 @@ body {
         width: 100%;
         height: 400px;
       }
+    }
+  }
+  &__footer {
+    margin: 3% 0;
+    padding: 0 5%;
+    p {
+      padding: 5px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+  }
+  &__note {
+    font-size: 14px;
+    color: #555;
+  }
+  &__book {
+    color: rgb(182, 182, 182);
+    &--link {
+      color: rgb(182, 182, 182);
+      // color: #FFA5A5;
+
     }
   }
 }
