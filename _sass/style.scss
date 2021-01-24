@@ -22,6 +22,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+  a {
+  color: rgb(182, 182, 182);
+  }
+}
 //* HEADER
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -253,7 +262,7 @@ body {
   padding: 5% 0;
   &__header {
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
   }
   &__main {
     margin-top: 30px;
@@ -283,6 +292,9 @@ body {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .summary {
+    &__header {
+      font-size: 40px;
+    }
     &__main {
       font-size: 22px;
       padding: 10% 15%;
@@ -309,7 +321,7 @@ body {
   padding: 5% 0;
   &__header {
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
   }
   &__main {
     text-align: center;
@@ -338,6 +350,9 @@ body {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .cast {
+    &__header {
+      font-size: 40px;
+    }
     &__main {
       &--image {
         width: 80%;
@@ -358,7 +373,7 @@ body {
   padding: 5% 0;
   &__header {
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
   }
   &__main {
     padding: 0 5%;
@@ -406,11 +421,11 @@ body {
     color: #555;
   }
   &__book {
-    color: rgb(182, 182, 182);
     &--link {
-      color: rgb(182, 182, 182);
-      // color: #FFA5A5;
-
+      color: #FFC6CC;
+      &:hover {
+        color: #FFA5A5;
+      }
     }
   }
 }
@@ -420,6 +435,11 @@ body {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .info {
+    &__header {
+      font-size: 40px;
+    }
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
