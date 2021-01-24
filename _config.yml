@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   NAGOYAダイアモンズ　第13期演劇 公演 卵の中の白雪姫
 author: NAGOYAダイアモンズ 
 title: 第13期 演劇 卵の中の白雪姫
-title_image: /assets/images/header.png
+title_image: https://seiichiroito.github.io/snow-white/assets/images/header.png
 baseurl: /snow-white # the subpath of your site, e.g. /blog
 url: https://seiichiroito.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nagoya_drama_la
