@@ -1,0 +1,62 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.corona {
+    padding: 5% 0;
+    flex: 1;
+    &__header {
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        p {
+            margin-top: 10px;
+            text-align: end;
+        }
+    }
+    &__main {
+        padding: 5% 10%;
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        &--newline {
+            margin-top: 15px;
+        }
+        .attension {
+            text-decoration: underline;
+        }
+        &--sub-title {
+            margin-top: 25px;
+            font-size: 18px;
+            & + p {
+                margin-top: 10px;
+            }
+        }
+        a {
+            color: #FFA5A5;
+            display: inline-block;
+            margin-top: 5px;
+            &:hover {
+                color: hsl(0, 93%, 73%);
+            }
+        }
+    }
+    &__footer {
+        text-align: end;
+        color: #555;
+    }
+}
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+  
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+  }
+  
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }

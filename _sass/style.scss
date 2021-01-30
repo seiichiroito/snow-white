@@ -52,7 +52,7 @@ body {
 @media (min-width: 768px) {
   .nav-links {
     // box-sizing: border-box;
-    margin-left:18%;
+    margin-left:12%;
     background: #ffc6cc;
   }
 }
@@ -60,7 +60,7 @@ body {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .nav-links {
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 
@@ -444,6 +444,65 @@ body {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+}
+
+//* CORONA INFO
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+.corona_info {
+  background-color: #f6f3ef;
+  padding: 0% 0 5%;
+  &__header {
+    h1 {
+    text-align: center;
+      font-size: 32px;
+    }
+    p {
+      margin-top: 10px;
+      text-align: end;
+    }
+  }
+  &__main {
+    margin-top: 30px;
+    padding: 0 5%;
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+  &__footer {
+    margin-top: 25px;
+    text-align: center;
+    &--button {
+      background-color: #FFC6CC;
+      padding: 2% 5%;
+      display: inline-block;
+      border-radius: 30px;
+      &:hover {
+        background-color: #FFA5A5;
+
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
 //* FOOTER
 /* Extra small devices (phones, less than 768px) */
